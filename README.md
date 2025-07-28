@@ -1,13 +1,13 @@
 ![NLTKaz Banner](assets/banner.png)
 
-# NLTKaz
+# NLTKAZ
 
-**NLTKaz** is a natural language processing toolkit designed for the Azerbaijani language. It provides tools for stemming and stopword removal, making it easier to preprocess Azerbaijani text for NLP tasks.
+**NLTKAZ** is a natural language processing toolkit designed for the Azerbaijani language making it easier to preprocess Azerbaijani text for NLP tasks.
 
 ## Features
-- **Stemming**: Reduce words to their root forms using language-specific root lists (Azerbaijani and English).
+Currently it provides following features:
+- **Stemming**: Reduce words to their root forms.
 - **Stopword Removal**: Easily remove common Azerbaijani stopwords from text.
-- **Resource Files**: Includes comprehensive root and stopword lists for accurate processing.
 
 ## Installation
 ```bash
@@ -18,37 +18,29 @@ pip install nltkaz
 
 ### Stemming
 ```python
-from nltkaz.stem import Stemmer
+from azstemmer import AzStemmer
 
-stemmer = Stemmer(keyboard="az")
-stemmed_sentence = stemmer.stem("Bu gün hava çox gözəldir. Bunu dəyərləndirməliyik!")
-print(stemmed_sentence)
+# Initialize stemmer with the appropriate keyboard type
+# Use 'az' for Azerbaijani text or 'en' if the text is typed using an English keyboard
+stemmer = AzStemmer(keyboard="az") 
+
+# Stem your string
+stemmed_string = stemmer.stem("your_string")
 ```
 
 ### Stopword Removal
 ```python
 from nltkaz.stopwords import load, remove
 
+# load stopwords using
 stopwords = load()
-sentence = "Bu gün hava çox gözəldir. Bunu dəyərləndirməliyik ki, ən azından bir günümüz yaxşı keçsin!"
-result = remove(stopwords=stopwords, sentence=sentence)
-print(result)
+# remove stopwords from the given string
+result = remove(stopwords=stopwords, sentence="your_string")
 ```
-
-## Data Files
-- `nltkaz/stem/azwords.txt`: Azerbaijani root words (for stemming)
-- `nltkaz/stem/enwords.txt`: English root words (for stemming)
-- `nltkaz/stopwords/stopwords.txt`: Azerbaijani stopwords
-
-## Project Structure
-- `nltkaz/stem/stemmer.py`: Implements the `Stemmer` class for stemming operations.
-- `nltkaz/stopwords/stopwords.py`: Functions for loading and removing stopwords.
-- `tests/`: Example test scripts for both modules.
-- `assets/banner.png`: Project banner for documentation and presentation.
 
 ## Author
 - **Nagi Nagiyev**  
-  [naginagiyev03@gmail.com](mailto:naginagiyev03@gmail.com)
+  [nagiyevnagi01@gmail.com](mailto:naginagiyev03@gmail.com)
 
 ## License
 MIT License
