@@ -10,7 +10,7 @@ pip install nltkaz
 ```
 
 ## Features 🧩
-Currently following features are provided with the version 1.0.0:
+Currently following features are provided with the version 0.1.0:
 - **Stemming**: Reduce words to their root forms.
 - **Stopword Removal**: Easily remove common Azerbaijani stopwords from text.
 

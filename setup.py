@@ -2,12 +2,12 @@ from setuptools import setup, find_packages
 
 setup(
     name="nltkaz",
-    version="1.0.0",
+    version="0.1.0",
     description="A natural language processing toolkit designed for the Azerbaijani language.",
     long_description=open('README.md', encoding='utf-8').read(),
     long_description_content_type="text/markdown",
     author="Nagi Nagiyev",
-    author_email="naginagiyev03@gmail.com",
+    author_email="nagiyevnagi01@gmail.com",
     packages=find_packages(),
     install_requires=[
         "importlib_resources; python_version<'3.9'"
