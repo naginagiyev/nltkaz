@@ -1,21 +1,20 @@
 ![NLTKaz Banner](assets/banner.png)
 
-# NLTKAZ
+# NLTKAZ 📚
 
 **NLTKAZ** is a natural language processing toolkit designed for the Azerbaijani language making it easier to preprocess Azerbaijani text for NLP tasks.
 
-## Features
-Currently it provides following features:
-- **Stemming**: Reduce words to their root forms.
-- **Stopword Removal**: Easily remove common Azerbaijani stopwords from text.
-
-## Installation
+## Installation ⬇️
 ```bash
 pip install nltkaz
 ```
 
-## Usage
+## Features 🧩
+Currently following features are provided with the version 1.0.0:
+- **Stemming**: Reduce words to their root forms.
+- **Stopword Removal**: Easily remove common Azerbaijani stopwords from text.
 
+## Usage ⚙️
 ### Stemming
 ```python
 from azstemmer import AzStemmer
@@ -38,13 +37,17 @@ stopwords = load()
 result = remove(stopwords=stopwords, sentence="your_string")
 ```
 
-## Author
+## Author 🧑‍💻
 - **Nagi Nagiyev**  
-  [nagiyevnagi01@gmail.com](mailto:naginagiyev03@gmail.com)
 
-## License
+## Contact 📧
+Gmail: nagiyevnagi01@gmail.com.
+
+Linkedin: https://www.linkedin.com/in/naginagiyev/
+
+## License 📜
 MIT License
 
 ---
 
-> This project is in early development. Contributions and feedback are welcome!
+> This project is in early development. Contributions and feedback are welcome! 🤝
