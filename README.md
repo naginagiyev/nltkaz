@@ -1,4 +1,4 @@
-![NLTKaz Banner](assets/banner.png)
+![NLTKaz Banner](https://imgur.com/a/CDku1sZ)
 
 # NLTKAZ 📚
 
