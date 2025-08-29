@@ -1,4 +1,4 @@
-![NLTKaz Banner](https://i.imgur.com/NRajui2.png)
+![NLTKaz Banner](https://i.imgur.com/JecGkI0.png)
 
 # NLTKAZ 📚
 
@@ -10,18 +10,19 @@ pip install nltkaz
 ```
 
 ## Features 🧩
-Currently following features are provided with the version 0.1.1:
+Currently provided features:
 - **Stemming**: Reduce words to their root forms.
 - **Stopword Removal**: Easily remove common Azerbaijani stopwords from text.
+- **Tokenization**: Tokenize text into words, sentences, or tweets.
 
 ## Usage ⚙️
 ### Stemming
 ```python
-from azstemmer import AzStemmer
+from nltkaz import Stemmer
 
 # Initialize stemmer with the appropriate keyboard type
 # Use 'az' for Azerbaijani text or 'en' if the text is typed using an English keyboard
-stemmer = AzStemmer(keyboard="az") 
+stemmer = Stemmer(keyboard="az")
 
 # Stem your string
 stemmed_string = stemmer.stem("your_string")
@@ -29,12 +30,36 @@ stemmed_string = stemmer.stem("your_string")
 
 ### Stopword Removal
 ```python
-from nltkaz.stopwords import load, remove
+from nltkaz import load, remove
 
-# load stopwords using
+# Load stopwords
 stopwords = load()
-# remove stopwords from the given string
+
+# Remove stopwords from the given string
 result = remove(stopwords=stopwords, sentence="your_string")
+```
+
+### Tokenization
+
+#### Word Tokenizer
+```python
+from nltkaz import wordTokenize
+
+words = wordTokenize("your_string")
+```
+
+#### Sentence Tokenizer
+```python
+from nltkaz import sentenceTokenize
+
+sentences = sentenceTokenize("your_string")
+```
+
+#### Tweet Tokenizer
+```python
+from nltkaz import tweetTokenize
+
+tweets = tweetTokenize("your_string")
 ```
 
 ## Author 🧑‍💻

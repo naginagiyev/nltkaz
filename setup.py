@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="nltkaz",
-    version="0.1.1",
+    version="0.2.0",
     description="A natural language processing toolkit designed for the Azerbaijani language.",
     long_description=open('README.md', encoding='utf-8').read(),
     long_description_content_type="text/markdown",
